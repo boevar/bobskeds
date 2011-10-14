@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Fname:</b>
+  <%= @student.fname %>
+</p>
+
+<p>
+  <b>Lname:</b>
+  <%= @student.lname %>
+</p>
+
+<p>
+  <b>Session:</b>
+  <%= @student.session %>
+</p>
+
+<p>
+  <b>Grade:</b>
+  <%= @student.grade %>
+</p>
+
+<p>
+  <b>Section:</b>
+  <%= @student.section %>
+</p>
+
+<p>
+  <b>Period 1:</b>
+  <%= @student.pd1 %>
+</p>
+
+<p>
+  <b>Period 2:</b>
+  <%= @student.pd2 %>
+</p>
+
+<p>
+  <b>Period 3:</b>
+  <%= @student.pd3 %>
+</p>
+
+<p>
+  <b>Period 4:</b>
+  <%= @student.pd4 %>
+</p>
+
+<p>
+  <b>Period 5:</b>
+  <%= @student.pd5 %>
+</p>
+
+
+<%= link_to 'Edit', edit_student_path(@student) %> |
+<%= link_to 'Back', students_path %>

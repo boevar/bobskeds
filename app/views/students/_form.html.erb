@@ -1,0 +1,56 @@
+<%= form_for(@student) do |f| %>
+  <% if @student.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@student.errors.count, "error") %> prohibited this student from being saved:</h2>
+      <ul>
+      <% @student.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :fname %><br />
+    <%= f.text_field :fname %>
+  </div>
+  <div class="field">
+    <%= f.label :lname %><br />
+    <%= f.text_field :lname %>
+  </div>
+  <div class="field">
+    <%= f.label :session %><br />
+    <%= select 'student', 'session', %w(AM PM) %>
+  </div>
+  <div class="field">
+    <%= f.label :grade %><br />
+    <%= select 'student', 'grade', %w(9 10 11 12) %>
+  </div>
+  <div class="field">
+    <%= f.label :section %><br />
+	<%= select 'student', 'section', %w(11H 12H 11I 12I 11J) %>
+  </div>
+  <div class="field">
+    <%= f.label :pd1 %><br />
+	<%= select 'student', 'pd1', %w(English Math Reading SocStudies Science) %>
+  </div> 
+  <div class="field">
+    <%= f.label :pd2 %><br />
+	<%= select 'student', 'pd2', %w(English Math Reading SocStudies Science) %>
+  </div>
+  <div class="field">
+    <%= f.label :pd3 %><br />
+	<%= select 'student', 'pd3', %w(English Math Reading SocStudies Science) %>
+  </div>
+  <div class="field">
+    <%= f.label :pd4 %><br />
+	<%= select 'student', 'pd4', %w(English Math Reading SocStudies Science) %>
+  </div>
+  <div class="field">
+    <%= f.label :pd5 %><br />
+	<%= select 'student', 'pd5', %w(English Math Reading SocStudies Science) %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

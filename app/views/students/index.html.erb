@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head>
+<title>Chapter 3 - an image used as a background image</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/stylesheets/backgrounds.css" />
+<%= csrf_meta_tag %>
+</head>
+<body>
+<div id="content">
+<h1>Master List</h1>
+<table>
+  <tr>
+    <td width="10%">First</td>
+    <td width="9%">Last</td>
+    <td width="5%">SN</td>
+    <td width="5%">GR</td>
+    <td width="3%">HR</td>
+    <td width="10%">1st Period</td>
+    <td width="10%">2nd Period</td>
+    <td width="10%">3rd Period</td>
+    <td width="10%">4th Period</td>
+    <td width="20%">5th Period</td>
+	<td width="5%"></td>
+	<td width="5%"></td>
+	<td width="5%"></td>
+  </tr>
+</table>
+<table>
+<% @students.each do |student| %>
+  <tr>
+    <td width="10%"><%= student.fname %></td>
+    <td width="10%"><%= student.lname %></td>
+    <td width="5%"><%= student.session %></td>
+    <td width="5%"><%= student.grade %></td>
+    <td width="5%"><%= student.section %></td>
+    <td width="10%"><%= student.pd1 %></td>
+    <td width="10%"><%= student.pd2 %></td>
+    <td width="10%"><%= student.pd3 %></td>
+    <td width="10%"><%= student.pd4 %></td>
+    <td width="10%"><%= student.pd5 %></td>
+    <td width="5%"><%= link_to 'Show', student %></td>
+    <td width="5b%"><%= link_to 'Edit', edit_student_path(student) %></td>
+	
+    <td width="5%"><%= button_to 'Destroy', student, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+<br />
+<%= link_to 'New Student', new_student_path %>
+</div>
+</body>
+</html>

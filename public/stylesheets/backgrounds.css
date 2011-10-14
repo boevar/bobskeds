@@ -1,0 +1,12 @@
+body {
+	font: 0.8em Verdana, Geneva, Arial, Helvetica, sans-serif;
+	background-color: #d2d7e4;
+	color: #000000;
+	background-image: url(images/background-repeatx.jpg);
+	background-repeat: repeat-x;
+}
+#content {
+	margin: 2em 1em 2em .6em;
+	background-color: #FFFFFF;
+	padding: 1em;
+}

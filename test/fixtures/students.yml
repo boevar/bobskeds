@@ -1,0 +1,25 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  fname: MyString
+  lname: MyString
+  session: MyString
+  grade: MyString
+  section: MyString
+  pd1: MyString
+  pd2: MyString
+  pd3: MyString
+  pd4: MyString
+  pd5: MyString
+
+two:
+  fname: MyString
+  lname: MyString
+  session: MyString
+  grade: MyString
+  section: MyString
+  pd1: MyString
+  pd2: MyString
+  pd3: MyString
+  pd4: MyString
+  pd5: MyString
