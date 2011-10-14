@@ -3,8 +3,6 @@ Bobskeds::Application.routes.draw do
   get "pages/home"
   get "pages/Schedules"
   get "pages/about"
-  get "skeds/lab1pd1am"
-
   resources :lab1pd1am
   resources :lab1pd2am
   resources :lab1pd3am
