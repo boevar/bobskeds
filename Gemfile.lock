@@ -70,7 +70,6 @@ GEM
 PLATFORMS
   x86-mingw32
 	
-	
 DEPENDENCIES
   rails (= 3.0.3)
   rake (= 0.8.7)
