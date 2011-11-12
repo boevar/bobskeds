@@ -9,7 +9,6 @@ class Lab1pd1amController < ApplicationController
 
  def show
    @student = Student.find(params[:all])
-
    respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @student }
